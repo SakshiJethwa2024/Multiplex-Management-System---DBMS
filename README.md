@@ -4,4 +4,7 @@ It is DBMS project developed using SQL database , aimed to manage the daily earn
 
 This includes the tables , normalization , Er Diagram , the triggers , functions and procedures written to implement the multiplex management system.
 
+Here user can book the required seat for the show and can only book if it is available otherwise not.
+The revenue is distributed among the website owners , advertisement companies and concession providers and the theatre share is finally obtained.
+
 The txt file has the create and insert queries used in the project.
