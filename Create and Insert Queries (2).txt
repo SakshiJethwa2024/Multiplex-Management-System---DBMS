@@ -466,10 +466,41 @@ insert into movie_share values('Tu Jhuthi Main Makkar','100 crore','30%');
 insert into movie_share values('Brahmastra:Part One-Shiva','400 crore','40%');
 
 
-insert into shows values('Tu Jhuthi Main Makkar', '20-Apr-2023 12:00:00', '2.5 hrs', 10, 100);
-insert into shows values('Brahmastra:Part One-Shiva', '20-Apr-2023 12:00:00', '3 hrs', 11, 100);
-insert into shows values('Tu Jhuthi Main Makkar', '21-Apr-2023 21:30:00', '2.5 hrs', 12, 100);
-insert into shows values('Tu Jhuthi Main Makkar', '20-Apr-2023 17:00:00', '2.3 hrs', 11, 100);
+INSERT INTO shows 
+VALUES ('Tu Jhuthi Main Makkar', 
+        TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '2.5 hrs', 10, 100);
+
+INSERT INTO shows 
+VALUES ('Brahmastra:Part One-Shiva', 
+        TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '3 hrs', 11, 100);
+
+INSERT INTO shows 
+VALUES ('Tu Jhuthi Main Makkar', 
+        TO_DATE('21-Apr-2023 21:30:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '2.5 hrs', 12, 100);
+
+INSERT INTO shows 
+VALUES ('Tu Jhuthi Main Makkar', 
+        TO_DATE('20-Apr-2023 17:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '2.3 hrs', 11, 100);
+
+INSERT INTO shows 
+VALUES ('Brahmastra:Part One-Shiva', 
+        TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '3 hrs', 12, 101);
+
+INSERT INTO shows 
+VALUES ('Brahmastra:Part One-Shiva', 
+        TO_DATE('20-Apr-2023 09:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '3 hrs', 10, 101);
+
+INSERT INTO shows 
+VALUES ('Brahmastra:Part One-Shiva', 
+        TO_DATE('21-Apr-2023 20:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 
+        '3 hrs', 11, 101);
+
 
 
 insert into shows values('Brahmastra:Part One-Shiva', '20-Apr-2023 12:00:00', '3 hrs', 12, 101);
@@ -478,45 +509,114 @@ insert into shows values('Brahmastra:Part One-Shiva', '21-Apr-2023 20:00:00', '3
 
 
 
-insert into silver_price values(100,10,'20-Apr-2023 12:00:00',50);
-insert into gold_price values(100,10,'20-Apr-2023 12:00:00',100);
-insert into silver_price values(100,11,'20-Apr-2023 12:00:00',70);
-insert into gold_price values(100,11,'20-Apr-2023 12:00:00',150);
+-- Insert into silver_price
+INSERT INTO silver_price 
+VALUES (100, 10, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 50);
 
+INSERT INTO silver_price 
+VALUES (100, 11, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 70);
 
-insert into silver_seat values('A1', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A2', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A3', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A4', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A5', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A6', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A7', 10, 100, '20-Apr-2023 12:00:00',1);
+-- Insert into gold_price
+INSERT INTO gold_price 
+VALUES (100, 10, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 100);
 
-insert into gold_seat values('B1', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B2', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B3', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B4', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B5', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B6', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B7', 10, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B8', 10, 100, '20-Apr-2023 12:00:00',1);
+INSERT INTO gold_price 
+VALUES (100, 11, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 150);
 
-insert into silver_seat values('A1', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A2', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A3', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A4', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A5', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A6', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into silver_seat values('A7', 11, 100, '20-Apr-2023 12:00:00',1);
+-- Insert into silver_seat
+INSERT INTO silver_seat 
+VALUES ('A1', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
 
-insert into gold_seat values('B1', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B2', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B3', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B4', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B5', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B6', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B7', 11, 100, '20-Apr-2023 12:00:00',1);
-insert into gold_seat values('B8', 11, 100, '20-Apr-2023 12:00:00',1);
+INSERT INTO silver_seat 
+VALUES ('A2', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A3', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A4', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A5', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A6', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A7', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+-- Insert into gold_seat
+INSERT INTO gold_seat 
+VALUES ('B1', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B2', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B3', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B4', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B5', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B6', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B7', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B8', 10, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+-- Insert into silver_seat for another show
+INSERT INTO silver_seat 
+VALUES ('A1', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A2', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A3', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A4', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A5', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A6', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO silver_seat 
+VALUES ('A7', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+-- Insert into gold_seat for another show
+INSERT INTO gold_seat 
+VALUES ('B1', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B2', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B3', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B4', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B5', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B6', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B7', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
+INSERT INTO gold_seat 
+VALUES ('B8', 11, 100, TO_DATE('20-Apr-2023 12:00:00', 'DD-Mon-YYYY HH24:MI:SS'), 1);
+
 
 
 
@@ -532,12 +632,24 @@ insert into ConcessionDetails values(101,'Popcorn',100);
 insert into ConcessionDetails values(101,'Samosa',40);
 insert into ConcessionDetails values(101,'Coke',70);
 
-insert into Concession values(100,'Popcorn',1,sysdate,4);
-insert into Concession values(100,'Popcorn',2,sysdate,2);
-insert into Concession values(101,'Coke',3,sysdate,1);
-insert into Concession values(100,'Popcorn',5,sysdate,2);
-insert into Concession values(100,'Samosa',4,sysdate,2);
-insert into Concession values(100,'Samosa',1,sysdate,2);
+INSERT INTO Concession 
+VALUES (100, 'Popcorn', 1, SYSDATE, SYSDATE, 4);
+
+INSERT INTO Concession 
+VALUES (100, 'Popcorn', 2, SYSDATE, SYSDATE, 2);
+
+INSERT INTO Concession 
+VALUES (101, 'Coke', 3, SYSDATE, SYSDATE, 1);
+
+INSERT INTO Concession 
+VALUES (100, 'Popcorn', 5, SYSDATE, SYSDATE, 2);
+
+INSERT INTO Concession 
+VALUES (100, 'Samosa', 4, SYSDATE, SYSDATE, 2);
+
+INSERT INTO Concession 
+VALUES (100, 'Samosa', 1, SYSDATE, SYSDATE, 2);
+
 
 insert into WebsiteDetails values(100,'BookMyShow','Tu Jhuthi Main Makkar',9);
 insert into WebsiteDetails values(100,'PayTM','Tu Jhuthi Main Makkar',6);
@@ -555,16 +667,38 @@ insert into AdvertisementDetails values(100,'AD18','Brahmastra:Part One-Shiva',1
 insert into AdvertisementDetails values(101,'AD16','Brahmastra:Part One-Shiva',1500);
 
 
-insert into AdsShown values(100,10, to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD16');
-insert into AdsShown values(100,10, to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD17');
-insert into AdsShown values(100,10, to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD18');
-insert into AdsShown values(100,11, to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD18');
-insert into AdsShown values(100,11,  to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD17');
-insert into AdsShown values(100,11,  to_date('20-Apr-2023 12:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD16');
-insert into AdsShown values(100,11,  to_date('20-Apr-2023 5:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD18');
-insert into AdsShown values(100,11, to_date('20-Apr-2023 5:00:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD16');
-insert into AdsShown values(100,12,  to_date('21-Apr-2023 9:30:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD17');
-insert into AdsShown values(100,12, to_date('21-Apr-2023 9:30:00 pm','dd-mon-yyyy hh:mi:ss pm'),'AD16');
+-- Assuming the advertisements and shows already exist in the respective tables.
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD16', 10);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD17', 10);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD18', 10);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Brahmastra:Part One-Shiva', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD18', 11);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Brahmastra:Part One-Shiva', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD17', 11);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Brahmastra:Part One-Shiva', TO_DATE('20-APR-2023 12:00:00 PM', 'dd-MON-YYYY HH:MI:SS PM'), 'AD16', 11);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('20-APR-2023 17:00:00', 'dd-MON-YYYY HH24:MI:SS'), 'AD18', 11);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('20-APR-2023 17:00:00', 'dd-MON-YYYY HH24:MI:SS'), 'AD16', 11);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('21-APR-2023 21:30:00', 'dd-MON-YYYY HH24:MI:SS'), 'AD17', 12);
+
+INSERT INTO AdsShown (th_id, mov_name, sdatetime, ad_id, screen_id)
+VALUES (100, 'Tu Jhuthi Main Makkar', TO_DATE('21-APR-2023 21:30:00', 'dd-MON-YYYY HH24:MI:SS'), 'AD16', 12);
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -613,33 +747,39 @@ select * from website;
 --Procedures
 --1)Procedure to find movie show date and time for a particular movie at a particular theatre location.
 
-create procedure p1(thid in shows.th_id%type,mov in shows.mov_name%type)
-    is 
-    cursor c1 is select sdatetime from shows where mov_name=mov and th_id=thid; 
-    r1 c1%rowtype;
-    type t1 is table of r1%type;
-l1 t1;
-begin
-    open c1;
-    fetch c1 bulk collect into l1;
-    close c1;
-    dbms_output.put_line('Show date and time for movie '||mov||' are');
-for i in 1..l1.count 
-    loop
-    dbms_output.put_line(l1(i).sdatetime);
-end loop;
-end;
+CREATE OR REPLACE PROCEDURE p4(thid IN shows.th_id%TYPE, mov IN shows.mov_name%TYPE) 
+IS
+    CURSOR c1 IS 
+        SELECT sdatetime 
+        FROM shows 
+        WHERE mov_name = mov AND th_id = thid; 
+    r1 c1%ROWTYPE;
+    TYPE t1 IS TABLE OF r1%TYPE;
+    l1 t1;
+BEGIN
+    OPEN c1;
+    FETCH c1 BULK COLLECT INTO l1;
+    CLOSE c1;
+    
+    DBMS_OUTPUT.PUT_LINE('Show date and time for movie ' || mov || ' are:');
+    
+    FOR i IN 1..l1.COUNT LOOP
+        DBMS_OUTPUT.PUT_LINE(
+            TO_CHAR(l1(i).sdatetime, 'DD-MON-YYYY HH24:MI:SS')
+        );
+    END LOOP;
+END;
 /
 
-declare 
-    m shows.mov_name%type;
-    th shows.th_id%type;
-    sdt1 shows.sdatetime%type; 
-begin
-    m:='Tu Jhuthi Main Makkar';
-    th:=001;
-p1(th,m);
-end;
+-- Test the procedure
+DECLARE 
+    m shows.mov_name%TYPE;
+    th shows.th_id%TYPE;
+BEGIN
+    m := 'Tu Jhuthi Main Makkar';
+    th := 100;  -- Ensure this is the correct TH_ID value
+    p4(th, m);
+END;
 /
 
 *********************************************************************************************************
@@ -717,21 +857,27 @@ end;
 /
 
 
-declare 
-    m shows.mov_name%type;
-    th shows.th_id%type;
-    sdt1 shows.sdatetime%type; 
-    scid shows.screen_id%type;
-begin
-    m:='Tu Jhuthi Main Makkar';
-    th:=001;
-    sdt1:='20-Apr-2023 12:00:00';
-scid:=f1(th,sdt1,m);
-p2(th,sdt1,scid);
-dbms_output.put_line('-------------');
-p3(th,sdt1,scid);
-end;
+DECLARE
+    m shows.mov_name%TYPE;
+    th shows.th_id%TYPE;
+    sdt1 shows.sdatetime%TYPE;
+    scid shows.screen_id%TYPE;
+BEGIN
+    m := 'Tu Jhuthi Main Makkar';
+    th := 100;  -- Make sure this matches an actual TH_ID in your table
+    sdt1 := TO_DATE('20-Apr-2023 12:00:00', 'DD-MON-YYYY HH24:MI:SS');
+    
+    scid := f1(th, sdt1, m);
+    
+    -- Assuming p5 and p6 are valid procedures that take these parameters
+    p5(th, sdt1, scid);
+    
+    DBMS_OUTPUT.PUT_LINE('-------------');
+    
+    p6(th, sdt1, scid);
+END;
 /
+
 
 
 ********************************************************************************************************************************************************
