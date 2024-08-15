@@ -293,8 +293,9 @@ th_id number(3) ,
 mov_name varchar2(100) ,
  sdatetime date,
  ad_id varchar2(20),
+screen_id number(2),
 constraint fk_ads_ad foreign key(th_id,mov_name,ad_id) references AdvertisementDetails(th_id,mov_name,ad_id),
- constraint fk_ads foreign key(th_id ,mov_name , sdatetime) references Shows(th_id , mov_name , sdatetime),
+ constraint fk_ads foreign key(th_id ,screen_id , sdatetime) references Shows(th_id , screen_id , sdatetime),
 constraint pk_ads primary key(th_id , mov_name , sdatetime , ad_id));
 
 create table Adtemp(
