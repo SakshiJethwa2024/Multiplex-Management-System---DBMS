@@ -227,8 +227,8 @@ create table silverticket(
     sdatetime date not null,
     silver_seatnum varchar2(2) not null,
     cid int not null,
-    constraint pk_stid_thid primary key (ticket_id,th_id),
-    constraint fk_ti_thid foreign key(ticket_id,th_id) references ticket on delete cascade,
+    constraint pk_stid_thids primary key (ticket_id,th_id),
+    constraint fk_ti_thids foreign key(ticket_id,th_id) references ticket on delete cascade,
 
     constraint fk_ssno1_sid1_thid1_sdt1 foreign key (silver_seatnum, screen_id, th_id, sdatetime) references silver_seat ON DELETE CASCADE
 );
@@ -245,7 +245,7 @@ create table goldticket(
     gold_seatnum varchar2(2) not null,
     cid int not null,
     constraint pk_gtid_thid primary key (ticket_id,th_id),
-    constraint fk_ti_thid foreign key(ticket_id,th_id) references ticket on delete cascade,
+    constraint fk_ti_thidg foreign key(ticket_id,th_id) references ticket on delete cascade,
 
     constraint fk_gsno2_sid2_thid2_sdt2 foreign key (gold_seatnum, screen_id, th_id, sdatetime) references gold_seat ON DELETE CASCADE
 );
