@@ -211,7 +211,7 @@ create table customer(
 create table ticket(
     ticket_id number(7) not null,
     th_id number(3) not null,
-    constraint pk_stid_thid primary key (ticket_id,th_id),
+    constraint pk_stid_thid primary key (ticket_id,th_id)
 );
 
 
@@ -222,9 +222,9 @@ create table silverticket(
     nprice number(4) not null,
     bk_dt_time date,
     bk_type varchar2(10) not null,
-    drop function f2;
     screen_id number(2) not null,
     th_id number(3) not null,
+    sdatetime date not null,
     silver_seatnum varchar2(2) not null,
     cid int not null,
     constraint pk_stid_thid primary key (ticket_id,th_id),
@@ -239,7 +239,7 @@ create table goldticket(
     nprice number(4) not null,
     bk_dt_time date,
     bk_type varchar2(10) not null,
-    sdatetime varchar2(40),
+    sdatetime date not null,
     screen_id number(2) not null,
     th_id number(3) not null,
     gold_seatnum varchar2(2) not null,
